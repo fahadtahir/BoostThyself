@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="1"
+    >
+
+
+    <TextView
+        android:id="@+id/QuoteView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="cursive"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/AuthorView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/QuoteView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="79dp"
+        android:fontFamily="casual"
+        android:shadowColor="@android:color/background_dark"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:onClick="backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        app:srcCompat="@drawable/if_left_48"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/refreshbutton"
+        android:onClick="refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        app:srcCompat="@drawable/if_refresh_48"
+        android:layout_alignTop="@+id/backbutton"
+        android:layout_alignRight="@+id/AuthorView"
+        android:layout_alignEnd="@+id/AuthorView" />
+
+    <ImageView
+        android:id="@+id/savebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/backbutton"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+        android:layout_toEndOf="@+id/backbutton"
+        android:layout_toRightOf="@+id/backbutton"
+        android:onClick="saveButton"
+        app:srcCompat="@drawable/if_star_48" />
+
+</RelativeLayout>
